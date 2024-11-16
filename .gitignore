@@ -1,0 +1,33 @@
+# Ignore all hidden files and directories (except specific files)
+.*
+!.gitignore
+!.dockerignore
+!.env.example
+!.gitkeep
+
+# Ignore everything in the models directory except .gitkeep
+!models/
+models/*
+!models/.gitkeep
+
+# Ignore Python virtual environments
+venv/
+
+# Ignore Python bytecode files and cache directories
+__pycache__/
+*.py[cod]
+
+# Ignore log and temporary files
+*.log
+*.tmp
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Docker related
+.docker/

@@ -1,0 +1,13 @@
+services:
+  chat-app:
+    build: .
+    container_name: groq-chat-app
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./src:/app/src
+      - ./app.py:/app/app.py  # Mount app.py separately
+    restart: unless-stopped

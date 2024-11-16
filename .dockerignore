@@ -1,0 +1,20 @@
+# Exclude virtual environments
+venv/
+.venv/
+
+# Exclude model folders if not needed
+models/
+
+# Exclude temporary files and system folders
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+
+# Exclude git repository
+.git/
+.gitignore
+
+# Exclude other temporary or unnecessary files
+*.log
+*.tmp
